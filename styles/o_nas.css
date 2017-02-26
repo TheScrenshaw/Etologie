@@ -1,0 +1,56 @@
+main section#people a {
+    text-decoration: none;
+    color: #000;
+}
+
+main section#people a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+main section#people a div div {
+    align-items: center;
+    justify-content: space-around;
+}
+
+main section#people a div img {
+    height: calc(25vw - 2rem);
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    transition: filter 700ms;
+}
+
+main section#people a div:hover img {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+main section#people a div#people-img-left p {
+    margin-left: 2rem; 
+}
+
+main section#people a div#people-img-right p {
+    margin-right: 2rem; 
+}
+
+main section#people a div#people-img-left img {
+    order: 1;
+}
+
+main section#people a div#people-img-left div {
+    order: 2; 
+}
+
+main section#people a div#people-img-right img {
+    order: 2; 
+}
+
+main section#people a div#people-img-right div {
+    order: 1;
+}

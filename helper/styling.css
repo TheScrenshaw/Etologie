@@ -1,0 +1,289 @@
+/*
+    -----LEGEND-----
+-General 
+-Colors
+-Shadows
+-Positioning 
+-Bits and bobs
+*/
+
+
+/* General things */
+
+@font-face {
+    font-family: Juvenis;
+    src: url("../fonts/Juvenis Text Regular.otf");
+}
+
+* {
+    font-family: Juvenis !important;
+}
+
+main {
+    z-index: 0;
+
+}
+
+main section {
+    max-width: 75vw;
+    margin-right: 12.5vw;
+    margin-left: 12.5vw; 
+    margin-top: 3rem;
+}
+
+main section:last-of-type {
+    margin-bottom: 3rem;
+}
+
+.article-img-1 {
+    width: calc(25vw - 6rem);
+    height: auto;
+}
+
+.article-img-2 {
+    width: calc(50vw - 6rem);
+    height: auto;
+}
+
+/*  Colors */
+
+.color-blue5 {
+    background-color: rgba(0, 180, 241, 0.05);
+}
+
+.color-blue10 {
+    background-color: rgba(0, 180, 241, 0.1);
+}
+
+.color-blue20 {
+    background-color: rgba(0, 180, 241, 0.2);
+}
+
+.color-blue30 {
+    background-color: rgba(0, 180, 241, 0.3);
+}
+
+.color-blue40 {
+    background-color: rgba(0, 180, 241, 0.4);
+}
+
+.color-blue50 {
+    background-color: rgba(0, 180, 241, 0.5);
+}
+
+.color-darkblue5 {
+    background-color: rgba(0, 138, 198, 0.05);
+}
+
+.color-darkblue10 {
+    background-color: rgba(0, 138, 198, 0.1);
+}
+
+.color-darkblue20 {
+    background-color: rgba(0, 138, 198, 0.2);
+}
+
+.color-darkblue30 {
+    background-color: rgba(0, 138, 198, 0.3);
+}
+
+.color-darkblue40 {
+    background-color: rgba(0, 138, 198, 0.4);
+}
+
+.color-darkblue50 {
+    background-color: rgba(0, 138, 198, 0.5);
+}
+
+.color-purple5 {
+    background-color: rgba(112, 32, 127, 0.05);
+}
+
+.color-purple10 {
+    background-color: rgba(112, 32, 127, 0.1);
+}
+
+.color-purple20 {
+    background-color: rgba(112, 32, 127, 0.2);
+}
+
+.color-purple30 {
+    background-color: rgba(112, 32, 127, 0.3);
+}
+
+.color-purple40 {
+    background-color: rgba(112, 32, 127, 0.4);
+}
+
+.color-purple50 {
+    background-color: rgba(112, 32, 127, 0.5);
+}
+
+.color-darkpurple5 {
+    background-color: rgba(99, 80, 152, 0.05);
+}
+
+.color-darkpurple10 {
+    background-color: rgba(99, 80, 152, 0.1);
+}
+
+.color-darkpurple20 {
+    background-color: rgba(99, 80, 152, 0.2);
+}
+
+.color-darkpurple30 {
+    background-color: rgba(99, 80, 152, 0.3);
+}
+
+.color-darkpurple40 {
+    background-color: rgba(99, 80, 152, 0.4);
+}
+
+.color-darkpurple50 {
+    background-color: rgba(99, 80, 152, 0.5);
+}
+
+/* Shadows */
+
+.shadow-2dp {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  }
+
+.shadow-3dp {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12); 
+  }
+
+.shadow-4dp {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); 
+  }
+
+.shadow-6dp {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2); 
+  }
+
+.shadow-8dp {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); 
+  }
+
+.shadow-16dp {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); 
+  }
+
+.shadow-24dp {
+  box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2); 
+  }
+
+/* Positioning and stuff */
+
+.tleft {
+    text-align: left;
+}
+
+.tcenter {
+    text-align: center;
+} 
+
+.tright {
+    text-align: right;
+}
+
+.t-big {
+    font-size: 2rem;
+} 
+
+.t-indent {
+    text-indent: 3rem;
+}
+
+.mdl-grid {
+    max-width: 75vw;
+}
+
+.nopadd {
+    padding: 0;
+}
+
+.padd-1 {
+    padding: 1rem;
+}
+
+.padd-2 {
+    padding: 2rem;
+}
+
+.margin-t-2 {
+    margin-top: 2rem;
+}
+
+.row-margin {
+    margin-right: 2rem;
+}
+
+.row-margin:last-of-type {
+    margin-right: 0;
+}
+
+.col-margin {
+    margin-bottom: 2rem;
+}
+
+.col-margin:last-of-type {
+    margin-bottom: 0;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-row-nwr {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.flex-row-wr {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-col-nwr {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.flex-col-wr {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* Bits and bobs */
+
+.abutton {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem; 
+    border-radius: 2px;
+}
+
+.abutton:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+    text-decoration: none;
+}
+
+.abutton:active {
+    text-decoration: none;
+}
+
+.abutton:focus {
+    text-decoration: none;
+}
+
+.abutton:visited {
+    text-decoration: none;
+}

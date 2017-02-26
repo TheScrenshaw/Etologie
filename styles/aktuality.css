@@ -1,0 +1,14 @@
+main section#latest div p img {
+    width: calc(25vw - 2rem);    
+    height: calc(25vw - 2rem);
+}
+
+main section#latest div:nth-child(odd) p img {
+    float: left;
+    margin-right: 2rem;
+}
+
+main section#latest div:nth-child(even) p img {
+    float: right;
+    margin-left: 2rem;
+}

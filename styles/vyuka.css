@@ -1,0 +1,47 @@
+main section#programmes div h1 {
+    margin-bottom: 2rem;
+    align-self: center;
+}
+
+#programm-container {
+    display: none;
+}
+
+#programm-container.down {
+    display: flex;
+}
+
+main section#programmes div div button {
+    height: 4rem;
+    width: 30rem;
+    align-self: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 2px;
+}
+
+main section#programmes div div button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+main section#programmes div div button:focus {
+    outline: none;
+}
+
+main section#programmes div div div {
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+main section#programmes div div div div {
+    margin-bottom: 2rem;
+    min-height: 20rem;
+    max-width: calc(25vw - 4rem);
+    flex-basis: calc(25vw - 4rem);
+}
+
+main section#programmes div div div div:nth-of-type(3n + 2) {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
