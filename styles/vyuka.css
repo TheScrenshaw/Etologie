@@ -4,11 +4,30 @@ main section#programmes div h1 {
 }
 
 #programm-container {
-    display: none;
+    height: 0;
+    transition: height 1000;
 }
 
 #programm-container.down {
+    height: unset;
+}
+
+#programm-container a {
+    display: none;
+}
+
+#programm-container.down a {
     display: flex;
+}
+
+#programm-container a:nth-child(odd):hover {
+    background-color: rgba(112, 32, 127, 0.4);
+    transition: background 700ms;
+}
+
+#programm-container a:nth-child(even):hover {
+    background-color: rgba(0, 180, 241, 0.4);
+    transition: background 700ms; 
 }
 
 main section#programmes div div button {
@@ -33,15 +52,30 @@ main section#programmes div div div {
     padding-top: 2rem;
 }
 
-main section#programmes div div div div {
+main section#programmes div div div a {
     margin-bottom: 2rem;
-    min-height: 20rem;
+    min-height: 15rem;
     max-width: calc(25vw - 4rem);
     flex-basis: calc(25vw - 4rem);
+    text-decoration: none;
+    color: #000;
 }
 
-main section#programmes div div div div:nth-of-type(3n + 2) {
+main section#programmes div div div a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+main section#programmes div div div a:nth-of-type(3n + 2) {
     margin-right: 2rem;
     margin-left: 2rem;
 }
 
+main section#programmes div div div a div {
+    display: flex;
+    align-items: center;
+}
+
+main section#programmes div div div a div p {
+    text-align: center;
+}
