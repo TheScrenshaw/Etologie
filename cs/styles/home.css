@@ -107,7 +107,7 @@ main section#cubes a:hover {
 main section#cubes a div {
     color: #000;
     text-decoration: none;
-    min-height: 28rem;
+    min-height: 23rem;
     align-items: center;
     justify-content: space-around;
 }

@@ -231,10 +231,6 @@ main section:last-of-type {
     text-indent: 3rem;
 }
 
-.mdl-grid {
-    max-width: 105rem;
-}
-
 .nopadd {
     padding: 0;
 }
@@ -251,16 +247,26 @@ main section:last-of-type {
     margin-top: 2rem;
 }
 
+.row-margin:first-of-type {
+    margin-left: 0;
+}
+
 .row-margin {
-    margin-right: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .row-margin:last-of-type {
     margin-right: 0;
 }
 
+.com-margin:first-of-type {
+    margin-top: 0;
+}
+
 .col-margin {
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .col-margin:last-of-type {
@@ -304,11 +310,11 @@ main section:last-of-type {
     color: #000;
     padding: 0.5rem; 
     border-radius: 0.2rem;
+    transition: color 200ms
 }
 
 .abutton:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 

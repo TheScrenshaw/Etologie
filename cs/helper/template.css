@@ -53,10 +53,15 @@ header div nav a {
     background-color: transparent;
     border: none;
     border-radius: 0.2rem;
+    transition: color 200ms;
 }
 
 #drop-btn:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+#drop-btn:focus {
+    outline: none;
 }
 
 div#hd-dropdown {

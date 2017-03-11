@@ -1,6 +1,6 @@
 main section#completed-research div p img {
-    width: calc(25vw - 2rem);    
-    height: calc(25vw - 2rem);
+    width: 29rem;    
+    height: 29rem;
 }
 
 main section#completed-research div:nth-child(odd) p img {
