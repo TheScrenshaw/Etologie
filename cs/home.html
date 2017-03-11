@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Etologie člověka</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="helper/styling.css">
+        <link rel="stylesheet" type="text/css" href="helper/template.css">
+        <link rel="stylesheet" type="text/css" href="styles/home.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <!-- Waterfall header -->
+        <script type="text/javascript">
+            $(window).on("scroll touchmove", function () { $('#hd').toggleClass('tiny', $(document).scrollTop() > 100);});
+        </script>
+        <script type="text/javascript" src="js/logo-big.js"></script>
+    </head>
+    <body>
+        <!-- Facebook plugin -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v2.8";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+        <div class="">
+            <div id="upper-section" class="flex-col-nwr">
+                <header id="hd" class="flex-col-nwr shadow-16dp">
+                    <div id="hd-top" class="flex-col-nwr">
+                        <a id="logo-big" href=""></a>
+                        <nav id="navbar" class="flex-row-nwr">
+                            <a class="abutton" href="">Domů</a>
+                            <a class="abutton" href="aktuality.html">Aktuality</a>
+                            <a class="abutton" href="o_nas.html">O nás</a>
+                            <div id="hd-dropdown">
+                                <button id="drop-btn">Výzkum</button>
+                                <div class="shadow-4dp">
+                                    <a href="vyzkum/probihajici_vyzkum.html">Probíhající výzkum</a>
+                                    <a href="vyzkum/granty.html">Granty</a>
+                                    <a href="vyzkum/vyzkumna_temata.html">Výzkumná témata</a>
+                                    <a href="vyzkum/vysledky_vyzkumu.html">Výsledky výzkumů</a>
+                                </div>
+                            </div>
+                            <a class="abutton" href="publikace.html">Publikace</a>
+                            <div id="hd-dropdown">
+                                <button id="drop-btn">Výuka</button>
+                                <div class="shadow-4dp">
+                                    <a href="vyuka/programy.html">Programy</a>
+                                    <a href="vyuka/zajemci_o_studium.html">Zájamci o studium</a>
+                                </div>
+                            </div>
+                            <a class="abutton" href="kontakt.html">Kontakt</a>
+                            <a id="flag" href="../en/home.html"></a>
+                        </nav>
+                        </div>
+                    <div id="hd-cont">
+                        <div id="hd-cont-container" class="flex-row-nwr">
+                            <a id="logo-left" href=""></a>
+                            <nav id="navbar" class="flex-row-nwr">
+                                <a class="abutton" href="">Domů</a>
+                                <a class="abutton" href="aktuality.html">Aktuality</a>
+                                <a class="abutton" href="o_nas.html">O nás</a>
+                                <div id="hd-dropdown">
+                                    <button id="drop-btn">Výzkum</button>
+                                    <div class="shadow-4dp">
+                                        <a href="vyzkum/probihajici_vyzkum.html">Probíhající výzkum</a>
+                                        <a href="vyzkum/granty.html">Granty</a>
+                                        <a href="vyzkum/vyzkumna_temata.html">Výzkumná témata</a>
+                                        <a href="vyzkum/vysledky_vyzkumu.html">Výsledky výzkumů</a>
+                                    </div>
+                                </div>  
+                                <a class="abutton" href="publikace.html">Publikace</a>
+                                <div id="hd-dropdown">
+                                    <button id="drop-btn">Výuka</button>
+                                    <div class="shadow-4dp">
+                                        <a href="vyuka/programy.html">Programy</a>
+                                        <a href="vyuka/zajemci_o_studium.html">Zájamci o studium</a>
+                                    </div>
+                                </div>
+                                <a class="abutton" href="kontakt.html">Kontakt</a>
+                                <a id="flag" href="../en/home.html"></a>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+                <div id="spacer"></div>
+                <main id="main" class="flex-1">
+                    <section id="top">
+                        <div class="padd-2 flex-row-nwr shadow-8dp">
+                            <img src="resources/home/front_image.jpg" alt="" class="shadow-6dp">
+                            <p class="t-indent">Výzkumná skupina Etologie člověka je sdružení výzkumníků a výzkumných týmů působících především na Přírodovědecké fakultě a Fakultě humanitních studií Univerzity Karlovy v Praze a Národním ústavu duševního zdraví. Zabýváme se nejrůznějšími aspekty lidského chování, kognice a osobnosti nejen z evoluční perspektivy, ale i historicko-teoretickými aspekty věd o chování. Cílem této stránky je poskytnout přehled o námi zkoumané problematice a dalších zdrojích informací především studentům a zájemcům o další studium etologie, ale i dalším kolegům z příbuzných oborů či širší veřejnosti.</p>
+                        </div>
+                    </section>
+                    <section id="cubes" class="flex-row-nwr">
+                        <a class="row-margin flex-1" href="aktuality.html">
+                            <div id="purple" class="padd-2 shadow-6dp flex-col-nwr">
+                                <h3>Aktuality</h3>
+                                <p>Naše nejnovější články, příspěvky a jiné publikace</p>
+                            </div>
+                        </a>
+                        <a class="row-margin flex-1" href="kontakt.html">
+                            <div id="blue" class="padd-2 shadow-6dp flex-col-nwr">
+                                <h3>Kontakt</h3>
+                                <p>Máte otázku týkající se výzkumu? Napište nám. </p>
+                            </div>
+                        </a>
+                        <a class="row-margin flex-1" href="">
+                            <div id="darkpurple" class="padd-2 shadow-6dp flex-col-nwr">
+                                <h3>Výzkum</h3>
+                                <p>Zúčastněte se našeho výzkumu</p>
+                            </div>
+                        </a>
+                    </section>
+                    <section id="articles" class="flex-row-nwr flex-1">
+                        <div id="article-container" class="row-margin flex-2 flex-col-nwr">
+                            <div class="padd-2 col-margin shadow-6dp flex-col-nwr">
+                                <iframe id="article-iframe" class="flex-1 shadow-6dp" src="http://www.youtube.com/embed/zFziXEBAjd0"></iframe>
+                                <p class="t-big t-indent margin-t-2">Národní Ústav Duševního Zdraví.
+Stavba za miliardu, v polích, bez architektonické soutěže, bez etiky, bez estetiky, bez smyslu, bez naděje...</p>
+                            </div>
+                            <div class="padd-2 col-margin shadow-6dp flex-col-nwr">
+                                <img class="article-img-2 flex-1 shadow-6dp" src="resources/home/article-1.jpg" alt="">
+                                <p class="t-big t-indent margin-t-2">V časopise Československá psychologie vyšel článek "Souvislost genderové nonkonformity a mužské homosexuální orientace". Článek poukazuje</p>
+                            </div>
+                        </div>
+                        <div id="fb-container" class="padd-2 row-margin shadow-6dp flex-col-nwr">
+                            <div class="fb-page" data-href="https://www.facebook.com/etologie.cloveka?lst=100003689264824%3A100002359926865%3A1487408944" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+                                    <a href="https://www.facebook.com/facebook">Facebook</a>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </section>           
+                </main>
+            </div>
+            <footer class="color-purple50">
+                <div id="ft-cont" class="flex-row-nwr">
+                    <div id="ft-sponsors" class="flex-row-nwr">
+                        <a class="row-margin" href="http://fhs.cuni.cz/"><img src="resources/template/fhs_footer.png" alt=""></a>
+                        <a class="row-margin" href="http://www.nudz.cz/"><img src="resources/template/nudz_footer.png" alt=""></a>
+                        <a class="row-margin" href="https://www.natur.cuni.cz/fakulta"><img src="resources/template/pr_footer.png" alt=""></a>
+                    </div>
+                    <div id="ft-social" class="flex-row-nwr">
+                        <a class="row-margin" href=""><img src="resources/template/fb.png" alt=""></a>
+                        <a class="row-margin" href=""><img src="resources/template/tw.png" alt=""></a>
+                        <a class="row-margin" href=""><img src="resources/template/li.png" alt=""></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

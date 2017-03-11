@@ -1,0 +1,89 @@
+main section#programmes div h1 {
+    margin-bottom: 2rem;
+    align-self: center;
+}
+
+#programm-container {
+    height: 0;
+    transition: height 1000;
+}
+
+#programm-container.down {
+    height: unset;
+}
+
+#programm-container a {
+    display: none;
+}
+
+#programm-container.down a {
+    display: flex;
+}
+
+#programm-container a:nth-child(3n + 1):hover {
+    background-color: rgba(99, 80, 152, 0.4);
+    transition: background 700ms; 
+}
+
+#programm-container a:nth-child(3n + 2):hover {
+    background-color: rgba(0, 180, 241, 0.4);
+    transition: background 700ms; 
+}
+
+#programm-container a:nth-child(3n):hover {
+    background-color: rgba(112, 32, 127, 0.4);
+    transition: background 700ms;
+}
+
+main section#programmes div div button {
+    height: 4rem;
+    width: 30rem;
+    align-self: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 2px;
+}
+
+main section#programmes div div button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+main section#programmes div div button:focus {
+    outline: none;
+}
+
+main section#programmes div div div {
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+main section#programmes div div div a {
+    margin-bottom: 2rem;
+    min-height: 12rem;
+    max-width: 31rem;
+    flex-basis: 31rem;
+    text-decoration: none;
+    color: #000;
+}
+
+main section#programmes div div div a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+main section#programmes div div div a:nth-of-type(3n + 2) {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+main section#programmes div div div a div {
+    padding-top: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+main section#programmes div div div a div p {
+    text-align: center;
+}
