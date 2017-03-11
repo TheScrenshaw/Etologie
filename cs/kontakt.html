@@ -44,15 +44,52 @@
                 <main id="main" class="flex-1">
                     <section id="contact-text">
                         <div class="flex-row-nwr">
-                            <div id="text" class="padd-2 row-margin shadow-6dp flex-1">
-                                <h2 class="flex-1 tcenter">Kontakt</h2>
-                                <p class="t-indent">Výzkumná skupina Etologie člověka je sdružení výzkumníků a výzkumných týmů působících především v Národním ústavu duševního zdraví, na Přírodovědecké fakultě a Fakultě humanitních studií Univerzity Karlovy v Praze.</p>
-                                <p class="t-indent">Pro více informací ohledně studia etologie člověka na Přírodovědecké fakultě UK můžete kontaktovat doc. Jana Havlíčka, PhD, ohledně studia etologie člověka na Fakultě humanitních studií můžete kontaktovat Mgr. Jitku Lindovou, PhD.</p>
-                            </div>
-                            <div id="email" class="padd-2 row-margin shadow-6dp flex-2">
-                                <form>
+                            <div id="text" class="row-margin  flex-2">
+                                <div class="padd-2 shadow-6dp">
+                                    <h2 class="flex-1 tcenter">Kontakt</h2>
+                                    <p class="t-indent">Výzkumná skupina Etologie člověka je sdružení výzkumníků a výzkumných týmů působících především v Národním ústavu duševního zdraví, na Přírodovědecké fakultě a Fakultě humanitních studií Univerzity Karlovy v Praze.</p>
+                                    <p class="t-indent">Pro více informací ohledně studia etologie člověka na Přírodovědecké fakultě UK můžete kontaktovat doc. Jana Havlíčka, PhD, ohledně studia etologie člověka na Fakultě humanitních studií můžete kontaktovat Mgr. Jitku Lindovou, PhD.</p>
+                                </div>
+                                <div class="flex-1">
                                     
-                                </form>
+                                </div>
+                            </div>
+                            <div id="email" class="padd-2 flex-col-nwr row-margin shadow-6dp flex-1">
+                                <h2>Napište nám</h2>
+                                <?php
+                                $action=$_REQUEST['action'];
+                                if ($action=="")    /* display the contact form */
+                                    {
+                                    ?>
+                                    <form class="flex-col-nwr" action="" method="POST" enctype="multipart/form-data">
+                                        <input type="hidden" name="action" value="submit">
+                                        <span class="form-title">Vaše jméno:<br></span>
+                                        <input class="form-textarea" name="name" type="text" value="" size="30"/><br>
+                                        <span class="form-title">Váš email:<br></span>
+                                        <input class="form-textarea" name="email" type="text" value="" size="30"/><br>
+                                        <span class="form-title">Zpráva:<br></span>
+                                        <textarea class="form-textarea" name="message" rows="7" cols="30"></textarea><br>
+                                        <input id="send-btn" class="abutton" type="submit" value="Poslat email"/>
+                                    </form>
+                                    <?php
+                                    } 
+                                else                /* send the submitted data */
+                                    {
+                                    $name=$_REQUEST['name'];
+                                    $email=$_REQUEST['email'];
+                                    $message=$_REQUEST['message'];
+                                    if (($name=="")||($email=="")||($message==""))
+                                        {
+                                        echo "All fields are required, please fill the form again.";
+                                        }
+                                    else{        
+                                        $from="From: $name ($email)\r\nReturn-path: $email";
+                                        $subject="Message sent using your contact form";
+                                        mail("youremail@yoursite.com", $subject, $message, $from);
+                                        echo "Email sent!";
+                                        }
+                                    }  
+                                ?>						
                             </div>
                         </div>
                     </section>
