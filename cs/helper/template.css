@@ -84,11 +84,11 @@ div#hd-dropdown div a {
     padding: 1.2rem 1.6rem;
     text-decoration: none;
     display: block;
+    transition: color 200ms;
 }
 
 div#hd-dropdown div a:hover {
-    color: #000;
-    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 180, 241, 0.4);
     text-decoration: none;
 }
 

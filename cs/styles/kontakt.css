@@ -20,6 +20,7 @@ main section#contacts div div img {
     background-color: transparent;
     border: none;
     border-radius: 0.2rem;
+    transition: background 200ms;
     color: #000;
 }
 

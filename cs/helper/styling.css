@@ -247,7 +247,7 @@ main section:last-of-type {
     margin-top: 2rem;
 }
 
-.row-margin:first-of-type {
+.row-margin:first-child {
     margin-left: 0;
 }
 
@@ -256,11 +256,11 @@ main section:last-of-type {
     margin-left: 1rem;
 }
 
-.row-margin:last-of-type {
+.row-margin:last-child {
     margin-right: 0;
 }
 
-.com-margin:first-of-type {
+.com-margin:first-child {
     margin-top: 0;
 }
 
@@ -269,7 +269,7 @@ main section:last-of-type {
     margin-bottom: 1rem;
 }
 
-.col-margin:last-of-type {
+.col-margin:last-child {
     margin-bottom: 0;
 }
 
