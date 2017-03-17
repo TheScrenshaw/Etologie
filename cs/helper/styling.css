@@ -19,8 +19,20 @@
     font-family: Juvenis !important;
 }
 
-html {
-    font-size: 10px;
+@media (min-width:2560px) {
+    html {font-size: 15px;}
+}
+
+@media (max-width:2559px) and (min-width:1440px) {
+    html {font-size: 10px;}
+}
+
+@media (max-width:1439px) and (min-width:1024px) {
+    html {font-size: 17px;}
+}
+
+@media (max-width:1023px) and (min-width:768px) {
+    html {font-size: 7px;}
 }
 
 h1 {
@@ -314,7 +326,7 @@ main section:last-of-type {
 }
 
 .abutton:hover {
-    color: #fff;
+    color: rgba(0, 138, 198, 0.4);
     text-decoration: none;
 }
 
