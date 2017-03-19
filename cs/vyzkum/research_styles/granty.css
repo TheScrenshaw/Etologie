@@ -58,6 +58,7 @@ main section#grants div div div {
 }
 
 main section#grants div div div div {
+    padding: 0;
     margin-bottom: 2rem;
     min-height: 12rem;
     max-width: 31rem;
@@ -76,14 +77,6 @@ main section#grants div div div div:nth-of-type(3n + 2) {
     margin-left: 2rem;
 }
 
-main section#grants div div div div div {
-    padding-top: 0;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    display: flex;
-    align-items: center;
-}
-
-main section#grants div div div div div p {
+main section#grants div div div div p {
     text-align: center;
 }
