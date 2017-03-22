@@ -5,39 +5,74 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="helper/styling.css">
         <link rel="stylesheet" type="text/css" href="helper/template.css">
-        <link rel="stylesheet" type="text/css" href="styles/aktuality.css">
+        <link rel="stylesheet" type="text/css" href="styles/home.css">
         <script type="text/javascript" src="js/jquery.js"></script>
+        <!-- Waterfall header -->
+        <script type="text/javascript">
+            $(window).on("scroll touchmove", function () { $('#hd').toggleClass('tiny', $(document).scrollTop() > 100);});
+        </script>
+        <script type="text/javascript" src="js/logo-big.js"></script>
+        <script type="text/javascript" src="js/mobile.js"></script>
     </head>
     <body>
         <div class="">
             <div id="upper-section" class="flex-col-nwr">
                 <header id="hd" class="flex-col-nwr shadow-16dp">
-                    <div id="hd-cont" class="flex-row-nwr">
-                        <a id="logo-left" href="home.html"></a>
-                        <nav id="navbar" class="flex-row-nwr">
-                            <a class="abutton" href="home.html">Domů</a>
-                            <a class="abutton" href="">Aktuality</a>
-                            <a class="abutton" href="o_nas.html">O nás</a>
-                            <div id="hd-dropdown">
-                                <button id="drop-btn">Výzkum</button>
-                                <div class="shadow-4dp">
-                                    <a href="vyzkum/probihajici_vyzkum.html">Probíhající výzkum</a>
-                                    <a href="vyzkum/granty.html">Granty</a>
-                                    <a href="vyzkum/vyzkumna_temata.html">Výzkumná témata</a>
-                                    <a href="vyzkum/vysledky_vyzkumu.html">Výsledky výzkumů</a>
+                    <div id="mobile-menu"> 
+                        <button type=""></button>
+                        <div id="mobile-menu-container">
+                        <div>
+                             <ul>
+                                 <li><a href="home.html">Domů</a></li>
+                                 <li><a href="aktuality.html">Aktuality</a></li>
+                                 <li><a href="o_nas.html">O nás</a></li>
+                                 <li>Výzkum</li>
+                                 <ul>
+                                     <li><a href="vyzkum/probihajici_vyzkum.html">Probíhající výzkum</a></li>
+                                     <li><a href="vyzkum/granty.html">Granty</a></li>
+                                     <li><a href="vyzkum/vyzkumna_temata.html">Výzkumná témata</a></li>
+                                     <li><a href="vyzkum/vysledky_vyzkumu.html">Výsledky výzkumů</a></li>
+                                 </ul>
+                                 <li><a href="publikace.html">Publikace</a></li>
+                                 <li>Výuka</li>
+                                 <ul>
+                                    <li><a href="vyuka/programy.html">Programy</a></li>
+                                    <li><a href="vyuka/zajemci_o_studium.html">Zájemci o studium</a></li> 
+                                 </ul>
+                                 <li><a href="kontakt.html">Kontakt</a></li>
+                                 <li><a href="../en/home.html">English version</a></li>
+                             </ul>
+                         </div>
+                        </div>  
+                    </div>
+                    <div id="hd-cont">
+                        <div id="hd-cont-container" class="flex-row-nwr">
+                            <a id="logo-left" class="desktop" href="home.html"></a>
+                            <nav id="navbar" class="flex-row-nwr desktop">
+                                <a class="abutton" href="home.html">Domů</a>
+                                <a class="abutton" href="aktuality.html">Aktuality</a>
+                                <a class="abutton" href="o_nas.html">O nás</a>
+                                <div id="hd-dropdown">
+                                    <button id="drop-btn">Výzkum</button>
+                                    <div class="shadow-4dp">
+                                        <a href="vyzkum/probihajici_vyzkum.html">Probíhající výzkum</a>
+                                        <a href="vyzkum/granty.html">Granty</a>
+                                        <a href="vyzkum/vyzkumna_temata.html">Výzkumná témata</a>
+                                        <a href="vyzkum/vysledky_vyzkumu.html">Výsledky výzkumů</a>
+                                    </div>
+                                </div>  
+                                <a class="abutton" href="publikace.html">Publikace</a>
+                                <div id="hd-dropdown">
+                                    <button id="drop-btn">Výuka</button>
+                                    <div class="shadow-4dp">
+                                        <a href="vyuka/programy.html">Programy</a>
+                                        <a href="vyuka/zajemci_o_studium.html">Zájamci o studium</a>
+                                    </div>
                                 </div>
-                            </div>  
-                            <a class="abutton" href="publikace.html">Publikace</a>
-                            <div id="hd-dropdown">
-                                <button id="drop-btn">Výuka</button>
-                                <div class="shadow-4dp">
-                                    <a href="vyuka/programy.html">Programy</a>
-                                    <a href="vyuka/zajemci_o_studium.html">Zájamci o studium</a>
-                                </div>
-                            </div>
-                            <a class="abutton" href="kontakt.html">Kontakt</a>
-                            <a id="flag" href="../en/home.html"></a>
-                        </nav>
+                                <a class="abutton" href="kontakt.html">Kontakt</a>
+                                <a id="flag" href="../en/home.html"></a>
+                            </nav>
+                        </div>
                     </div>
                 </header>
                 <div id="spacer"></div>
@@ -99,8 +134,8 @@ heard of by any Earthman.</p>
                 </main>
             </div>
             <footer class="color-purple50">
-                <div id="ft-cont" class="flex-row-nwr">
-                    <div id="ft-sponsors" class="flex-row-nwr">
+                <div id="ft-cont" class="desktop-row mobile-col nwr">
+                    <div id="ft-sponsors" class="desktop-row mobile-col nwr">
                         <a class="row-margin" href="http://fhs.cuni.cz/"><img src="resources/template/fhs_footer.png" alt=""></a>
                         <a class="row-margin" href="http://www.nudz.cz/"><img src="resources/template/nudz_footer.png" alt=""></a>
                         <a class="row-margin" href="https://www.natur.cuni.cz/fakulta"><img src="resources/template/pr_footer.png" alt=""></a>

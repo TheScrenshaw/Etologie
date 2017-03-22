@@ -41,6 +41,13 @@ header {
     background-repeat: no-repeat;
 }
 
+@media (max-width: 1023px) {
+    header.tiny {height: 10vh !important;}
+    #logo-left {width: 18vh; height: 9vh;}
+    #hd-cont-container {justify-content: flex-end !important;}
+    #hd-cont {max-width: 95vw !important; margin-right: 2.5vw !important; margin-left: 2.5vw !important;}
+}
+
 header div nav a {
     font-size: 1.5rem;
 }
@@ -116,6 +123,10 @@ div#hd-dropdown:hover div {
     justify-content: space-between;
 }
 
+#hd-cont-container {
+    display: flex;
+}
+
 header div nav {
     align-items: center;
 }
@@ -178,4 +189,83 @@ footer {
     #ft-social a img {max-height: 10vw;}
     #ft-social a {margin-right: 4vw;}
     #ft-social a:last-of-type {margin-right: 0;}
+}
+
+
+/* Other */
+
+@media (min-width: 1024px) {
+    #mobile-menu {display: none;}
+}
+
+@media (max-width: 1023px) {
+    #mobile-menu {display: flex;}
+}
+
+#mobile-menu button {
+    position: fixed;
+    margin-top: 2vh;
+    margin-left: 2.5vw;
+    height: 6vw;
+    width: 6vw;
+    background-color: transparent;
+    border: none;
+    background-image: url(../resources/template/mobile_menu_icon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#mobile-menu button:focus {
+    outline: none;
+}
+
+#mobile-menu div {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#mobile-menu div div {
+    position: fixed;
+    display: flex;
+    height: 100%;
+    width: 60%;
+    background-color: #fff;
+}
+
+#mobile-menu div div ul {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+#mobile-menu div div ul ul {
+    width: 100%;
+}
+
+#mobile-menu div div ul li {
+    height: 6.5vh;
+    width: 90%;
+    font-size: 3.5rem;
+    transition: color 200ms;
+    list-style-type: none;
+}
+
+#mobile-menu div div ul li a {
+    text-decoration: none !important;
+    transition: color 200ms;
+    color: #000;
+}
+
+#mobile-menu div div ul li:hover {
+    color: rgba(0, 138, 198, 0.4);
+}
+
+#mobile-menu div div * li a:hover {
+    color: rgba(0, 138, 198, 0.4);
 }

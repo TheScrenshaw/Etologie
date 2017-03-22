@@ -71,23 +71,24 @@ header.tiny div nav div#hd-dropdown div a {
     width: 56rem;
     height: 28rem;
     align-self: center;
-    background-image: url("../resources/template/logo_CZ.png");
+    background-image: url("../resources/template/logo_big_CZ.png");
     background-size: auto 28rem;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #logo-left {
-    display: inline-flex;
+    display: flex;
 }
 
 main section#top div {
+    display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 main section#top div img {
-    max-height: 25rem;
+    max-width: 40rem;
 }
 
 main section#top div p {
@@ -159,7 +160,19 @@ main section#articles div#article-container {
     main section#articles div#article-container {margin: 0;}
 }
 
+@media (max-width: 767px) {
+    main section#top div img {max-width: 90vw;}
+    main section#articles div div * {width: 90vw !important;}
+    main section#articles div div #article-iframe {height: calc(90vw/16*9) !important;}
+}
+
+main section#articles div div {
+    display: flex;
+    align-items: center;
+}
+
 main section#articles div div #article-iframe {
+    width: 70rem;
     height: calc(70rem/16*9);
     border: none;
 }
