@@ -88,16 +88,25 @@ main section#top div {
 
 main section#top div img {
     max-height: 25rem;
-    float: left;
 }
 
 main section#top div p {
     padding-left: 2rem;
 }
 
+main section#cubes {
+    display: flex;
+}
+
 main section#cubes a {
+    flex-basis: 35rem;
     text-decoration: none;
-    justify-content: space-around;
+}
+
+@media (max-width:767px) {
+    main section#cubes a {align-self: center; width: 80vw; margin-bottom: 2rem;}
+    main section#cubes a:last-of-type {margin: 0;}
+    main section#cubes a div {height: 46rem;}
 }
 
 main section#cubes a:hover {
@@ -142,8 +151,12 @@ main section#cubes a div p {
     flex: 1;
 }
 
-main section#articles div#article-container{
-    max-width: 68rem;
+main section#articles div#article-container {
+    flex-basis: 68rem;
+}
+
+@media (max-width: 1023px) {
+    main section#articles div#article-container {margin: 0;}
 }
 
 main section#articles div div #article-iframe {

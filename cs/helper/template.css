@@ -136,7 +136,12 @@ footer {
     justify-content: flex-start;
 }
 
+@media (max-width: 767px) {
+    #upper-section {min-height: calc(100vh - 94vw);}
+}
+
 #ft-cont {
+    display: flex;
     position: absolute;
     width: 105rem;
     margin-right: calc((100vw - 105rem)/2);
@@ -147,6 +152,7 @@ footer {
 }
 
 #ft-sponsors {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -160,4 +166,16 @@ footer {
 
 #ft-social a img {
     max-height: 3.2rem;
+}
+
+@media (max-width: 767px) {
+    footer {height: 94vw;}
+    #ft-sponsors {align-items: center;}
+    #ft-sponsors a img {width: 60vw; max-height: unset;}
+    #ft-sponsors a:first-of-type {margin-top: 4vw;}
+    #ft-sponsors a {margin-bottom: 4vw;}
+    #ft-social {align-self: center;}
+    #ft-social a img {max-height: 10vw;}
+    #ft-social a {margin-right: 4vw;}
+    #ft-social a:last-of-type {margin-right: 0;}
 }
