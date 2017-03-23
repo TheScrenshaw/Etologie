@@ -36,3 +36,8 @@ main section#contacts div div img {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0.2rem;
 }
+
+@media (max-width: 767px) {
+    main section#contacts div div img {width: 85vw;}
+    main section#contacts div div div div.map {height: 30vh;}
+}

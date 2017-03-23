@@ -31,6 +31,10 @@ main section#people a div:hover img {
     -webkit-filter: grayscale(0);
 }
 
+@media (max-width: 767px) {
+    main section#people a div img {height: unset; width: 90vw; filter: grayscale(0%); -webkit-filter: grayscale(0%); -moz-filter: grayscale(0%); filter: none; -webkit-filter: grayscale(0);}
+}
+
 main section#people a div#people-img-left p {
     margin-left: 2rem; 
 }
