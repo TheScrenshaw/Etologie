@@ -98,6 +98,10 @@
     p {
         font-size: 1.4rem;
     }
+
+    li {
+        font-size: 1.4rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -126,6 +130,10 @@
     }
     
     p {
+        font-size: 2.8rem;
+    }
+
+    li {
         font-size: 2.8rem;
     }
 }
