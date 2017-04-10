@@ -8,6 +8,10 @@ main section#people a:hover {
     color: #000;
 }
 
+main section#people a div {
+    display: flex;
+}
+
 main section#people a div div {
     align-items: center;
     justify-content: space-around;
@@ -31,10 +35,6 @@ main section#people a div:hover img {
     -webkit-filter: grayscale(0);
 }
 
-@media (max-width: 767px) {
-    main section#people a div img {height: unset; width: 90vw; filter: grayscale(0%); -webkit-filter: grayscale(0%); -moz-filter: grayscale(0%); filter: none; -webkit-filter: grayscale(0);}
-}
-
 main section#people a div#people-img-left p {
     margin-left: 2rem; 
 }
@@ -43,18 +43,15 @@ main section#people a div#people-img-right p {
     margin-right: 2rem; 
 }
 
-main section#people a div#people-img-left img {
-    order: 1;
+@media (min-width: 768px) {
+    main section#people a div#people-img-left img {order: 1;}
+    main section#people a div#people-img-left div {order: 2;}
+    main section#people a div#people-img-right img {order: 2;}
+    main section#people a div#people-img-right div {order: 1;}
 }
 
-main section#people a div#people-img-left div {
-    order: 2; 
-}
-
-main section#people a div#people-img-right img {
-    order: 2; 
-}
-
-main section#people a div#people-img-right div {
-    order: 1;
+@media (max-width: 767px) {
+    main section#people a div#people-img-right img {order: 1;}
+    main section#people a div#people-img-right div {order: 2;}
+    main section#people a div img {height: unset; width: 100%; filter: grayscale(0%); -webkit-filter: grayscale(0%); -moz-filter: grayscale(0%); filter: none; -webkit-filter: grayscale(0);}
 }

@@ -1,6 +1,6 @@
-main section#programmes div h1 {
+main section#programmes div img {
+    max-height: 15rem;
     margin-bottom: 2rem;
-    text-align: center;
     align-self: center;
 }
 

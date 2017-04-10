@@ -15,7 +15,16 @@
     src: url("../fonts/Juvenis Text Regular.otf");
 }
 
+@font-face {
+    font-family: Trebuchet;
+    src: url("../fonts/Trebuchet MS.ttf");
+}
+
 * {
+    font-family: Trebuchet !important;
+}
+
+h1, h2, h3, h4, h5, h6, li a, nav *, #mobile-menu ul li {
     font-family: Juvenis !important;
 }
 
@@ -72,7 +81,7 @@
 
 @media (min-width: 768px) {
     h1 {
-    font-size: 2.4rem;
+        font-size: 2.4rem;
     }
 
     h2 {
@@ -96,11 +105,11 @@
     }
 
     p {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
 
     li {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -130,11 +139,11 @@
     }
     
     p {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
     li {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -321,7 +330,7 @@ main section:last-of-type {
     } 
 
     .t-indent {
-        text-indent: 3rem;
+        text-indent: 2rem;
     }
 }
 
@@ -331,7 +340,7 @@ main section:last-of-type {
     } 
 
     .t-indent {
-        text-indent: 6rem;
+        text-indent: 4rem;
     }
 }
 

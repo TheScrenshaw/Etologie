@@ -1,14 +1,47 @@
-main section#latest div p img {
+main section#latest h1 {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+main section#latest div div h3 {
+    text-align: center;
+}
+
+main section#latest div div p {
+    flex: 1;
+    text-indent: 2rem;
+}
+
+main section#latest div div p a {
+    color: rgba(0, 138, 198, 0.5);
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+main section#latest div div p a:hover {
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+main section#latest div img{
     width: 29rem;    
     height: 29rem;
 }
 
-main section#latest div:nth-child(odd) p img {
-    float: left;
+main section#latest div:nth-child(odd) img {
+    order: 1;
     margin-right: 2rem;
 }
 
-main section#latest div:nth-child(even) p img {
-    float: right;
+main section#latest div:nth-child(odd) div {
+    order: 2;
+}
+
+main section#latest div:nth-child(even) img {
+    order: 2;
     margin-left: 2rem;
+}
+
+main section#latest div:nth-child(even) div {
+    order: 1;
 }

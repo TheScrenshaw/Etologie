@@ -42,10 +42,11 @@ header {
 }
 
 @media (max-width: 1023px) {
-    header.tiny {height: 10vh !important;}
+    header {height: 70px !important;}
+    #spacer {height: 70px !important;}
     #logo-left {width: 18vh; height: 9vh;}
     #hd-cont-container {justify-content: flex-end !important;}
-    #hd-cont {max-width: 95vw !important; margin-right: 2.5vw !important; margin-left: 2.5vw !important;}
+    #hd-cont {max-width: 100% !important; margin-right: 2.5vw !important; margin-left: 2.5vw !important;}
 }
 
 header div nav a {
@@ -208,8 +209,8 @@ footer {
     position: fixed;
     margin-top: 2vh;
     margin-left: 2.5vw;
-    height: 6vw;
-    width: 6vw;
+    height: 40px;
+    width: 40px;
     background-color: transparent;
     border: none;
     background-image: url(../resources/template/mobile_menu_icon.png);
@@ -236,7 +237,7 @@ footer {
     position: fixed;
     display: flex;
     height: 100%;
-    width: 60%;
+    width: 80%;
     background-color: #fff;
 }
 
@@ -251,9 +252,9 @@ footer {
 }
 
 #mobile-menu div div ul li {
-    height: 6.5vh;
+    height: 5vh;
     width: 90%;
-    font-size: 3.5rem;
+    font-size: 3rem;
     transition: color 200ms;
     list-style-type: none;
 }

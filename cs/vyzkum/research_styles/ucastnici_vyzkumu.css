@@ -1,0 +1,14 @@
+main section#participants div p img {
+    width: 29rem;    
+    height: 29rem;
+}
+
+main section#participants div:nth-child(odd) p img {
+    float: left;
+    margin-right: 2rem;
+}
+
+main section#participants div:nth-child(even) p img {
+    float: right;
+    margin-left: 2rem;
+}
