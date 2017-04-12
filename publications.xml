@@ -1,24 +1,147 @@
-<publication>
-    <jan-havlicek>
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+    <publication>
         <title>Men's preferences for women's breast size and shape in four cultures</title>
         <link>dsadasda</link>
         <date>Oct 2016</date>
         <publisher>Evolution and Human Behavior</publisher>
-        <author>Jan Havlíček</author>
-        <coauthors>
-            <name>Vít Třebický</name>
-            <name>Jaroslava Varella Valentova</name>
-            <name>Karel Kleisner</name>
-            <name>Robert Mbe Akoko</name>
-            <name>Jitka Fialová</name>
-            <name>Rosina Jash</name>
-            <name>Tomáš Kočnar</name>
-            <name>Kamila Janaina Pereira</name>
-            <name>Zuzana Štěrbová</name>
-            <name>Marco Antônio Corrêa Varella</name>
-            <name>Jana Vokurkova</name>
-            <name>Ernest Vunan</name>
-            <name>S. Craig Roberts</name>
-        </coauthors>
-    </jan-havlicek>
-</publication>
+        <a1>Jan Havlíček</a1>
+        <a2>Vít Třebický</a2>
+        <a3>Jaroslava Varella Valentova</a3>
+        <a4>Karel Kleisner</a4>
+        <a5>Robert Mbe Akoko</a5>
+        <a6>Jitka Fialová</a6>
+        <a7>Rosina Jash</a7>
+        <a8>Tomáš Kočnar</a8>
+        <a9>Kamila Janaina Pereira</a9>
+        <a10>Zuzana Štěrbová</a10>
+        <a11>Marco Antônio Corrêa Varella</a11>
+        <a12>Jana Vokurkova</a12>
+        <a13>Ernest Vunan</a13>
+        <a14>S. Craig Roberts</a14>
+        <a15></a15>
+        <a16></a16>
+        <a17></a17>
+        <a18></a18>
+        <a19></a19>
+        <a20></a20>
+        <a21></a21>
+        <a22></a22>
+        <a23></a23>
+        <a24></a24>
+        <a25></a25>
+        <a26></a26>
+        <a27></a27>
+        <a28></a28>
+        <a29></a29>
+        <a30></a30>
+    </publication>
+    <publication>
+        <title></title>
+        <link></link>
+        <date></date>
+        <publisher></publisher>
+        <a1></a1>
+        <a2></a2>
+        <a3></a3>
+        <a4></a4>
+        <a5></a5>
+        <a6></a6>
+        <a7></a7>
+        <a8></a8>
+        <a9></a9>
+        <a10></a10>
+        <a11></a11>
+        <a12></a12>
+        <a13></a13>
+        <a14></a14>
+        <a15></a15>
+        <a16></a16>
+        <a17></a17>
+        <a18></a18>
+        <a19></a19>
+        <a20></a20>
+        <a21></a21>
+        <a22></a22>
+        <a23></a23>
+        <a24></a24>
+        <a25></a25>
+        <a26></a26>
+        <a27></a27>
+        <a28></a28>
+        <a29></a29>
+        <a30></a30>
+    </publication>
+    <publication>
+        <title></title>
+        <link></link>
+        <date></date>
+        <publisher></publisher>
+        <a1></a1>
+        <a2></a2>
+        <a3></a3>
+        <a4></a4>
+        <a5></a5>
+        <a6></a6>
+        <a7></a7>
+        <a8></a8>
+        <a9></a9>
+        <a10></a10>
+        <a11></a11>
+        <a12></a12>
+        <a13></a13>
+        <a14></a14>
+        <a15></a15>
+        <a16></a16>
+        <a17></a17>
+        <a18></a18>
+        <a19></a19>
+        <a20></a20>
+        <a21></a21>
+        <a22></a22>
+        <a23></a23>
+        <a24></a24>
+        <a25></a25>
+        <a26></a26>
+        <a27></a27>
+        <a28></a28>
+        <a29></a29>
+        <a30></a30>
+    </publication>
+    <publication>
+        <title></title>
+        <link></link>
+        <date></date>
+        <publisher></publisher>
+        <a1></a1>
+        <a2></a2>
+        <a3></a3>
+        <a4></a4>
+        <a5></a5>
+        <a6></a6>
+        <a7></a7>
+        <a8></a8>
+        <a9></a9>
+        <a10></a10>
+        <a11></a11>
+        <a12></a12>
+        <a13></a13>
+        <a14></a14>
+        <a15></a15>
+        <a16></a16>
+        <a17></a17>
+        <a18></a18>
+        <a19></a19>
+        <a20></a20>
+        <a21></a21>
+        <a22></a22>
+        <a23></a23>
+        <a24></a24>
+        <a25></a25>
+        <a26></a26>
+        <a27></a27>
+        <a28></a28>
+        <a29></a29>
+        <a30></a30>
+    </publication>
+</dataroot>

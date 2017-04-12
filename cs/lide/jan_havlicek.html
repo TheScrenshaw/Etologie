@@ -110,32 +110,44 @@
                                   xmlhttp.open("GET", "../../publications.xml", true);
                                   xmlhttp.send();
                                 });
-                                function coauthors(table, xmlDoc, j) {
-                                    var y = xmlDoc[j].getElementsByTagName("coauthors");
-                                    var xTimes = y.childElementCount;
-                                    for (i = 0; i < xTimes; i++) {
-                                        table += "<li>" +
-                                        y[0].getElementsByTagName("name")[i].nodeValue +
-                                        "</li>";
-                                    };
-                                    return table;
-                                };
                                 function myFunction(xml) {
                                   var i;
                                   var xmlDoc = xml.responseXML;
                                   var table="";
-                                  var x = xmlDoc.getElementsByTagName("jan-havlicek");
-                                  for (i = 0; i <x.length; i++) { 
-                                    table += "<a href='" +
-                                    x[i].getElementsByTagName("link")[0].childNodes[0].nodeValue +
-                                    "'>" +
-                                    x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
-                                    "</a><ul><li>" +
-                                    x[i].getElementsByTagName("author")[0].childNodes[0].nodeValue +
-                                    "</li>";
-                                    coauthors(table, x, i);
+                                  var x = xmlDoc.getElementsByTagName("publication");
+                                  for (i = 0; i <x.length; i++) {
+                                    if (check(x, i) == true) {
+                                        table += "<a href='" +
+                                        x[i].getElementsByTagName("link")[0].childNodes[0].nodeValue +
+                                        "'>" +
+                                        x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
+                                        "</a><p>" +
+                                        x[i].getElementsByTagName("date")[0].childNodes[0].nodeValue + 
+                                        " in " +
+                                        x[i].getElementsByTagName("publisher")[0].childNodes[0].nodeValue +
+                                        "</p><ul><li>" +
+                                        x[i].getElementsByTagName("a1")[0].childNodes[0].nodeValue +
+                                        "</li><li>" + 
+                                        x[i].getElementsByTagName("a2")[0].childNodes[0].nodeValue +
+                                        "</li><li>" + 
+                                        x[i].getElementsByTagName("a3")[0].childNodes[0].nodeValue +
+                                        "</li><li>" + 
+                                        x[i].getElementsByTagName("a4")[0].childNodes[0].nodeValue +
+                                        "</li>";
+                                    };
                                   };
                                   document.getElementById("publications").innerHTML = table;
+                                };
+                                function check(x, a) {
+                                    var bool = false;
+                                    for (i = 3; i < x[a].childNodes.length; i = i + 1) {
+                                        if (x[a].querySelectorAll("publication *")[i + 1].childNodes[0].nodeValue == "Jan Havlíček") {
+                                            console.log(x[a].querySelectorAll("publication *")[i + 1].childNodes[0].nodeValue);
+                                            bool = true;
+                                            break;
+                                        };
+                                    };         
+                                    return bool;
                                 };
                                 </script>
                                 <div id="education" class="tab">
