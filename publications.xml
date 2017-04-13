@@ -2,7 +2,7 @@
 <dataroot>
     <publication>
         <title>Men's preferences for women's breast size and shape in four cultures</title>
-        <link>dsadasda</link>
+        <link>http://web.natur.cuni.cz/etologiecloveka/images/download/Havlicek_etal_EHB_inpress.pdf</link>
         <date>Oct 2016</date>
         <publisher>Evolution and Human Behavior</publisher>
         <a1>Jan Havlíček</a1>
@@ -19,24 +19,28 @@
         <a12>Jana Vokurkova</a12>
         <a13>Ernest Vunan</a13>
         <a14>S. Craig Roberts</a14>
-        <a15></a15>
-        <a16></a16>
-        <a17></a17>
-        <a18></a18>
-        <a19></a19>
-        <a20></a20>
-        <a21></a21>
-        <a22></a22>
-        <a23></a23>
-        <a24></a24>
-        <a25></a25>
-        <a26></a26>
-        <a27></a27>
-        <a28></a28>
-        <a29></a29>
-        <a30></a30>
     </publication>
     <publication>
+        <title>Effect of biological relatedness on perfume selection</title>
+        <link>http://web.natur.cuni.cz/etologiecloveka/images/download/Sobotkova_etal_Perception_inpress.pdf</link>
+        <date>nekdy</date>
+        <publisher>Perception</publisher>
+        <a1>Markéta Sobotkova</a1>
+        <a2>Jitka Fialová</a2>
+        <a3>S. Craig Roberts</a3>
+        <a4>Jan Havlíček</a4>
+    </publication>
+    <publication>
+        <title>Focal Length Affects Depicted Shape and Perception of Facial Images</title>
+        <link>http://web.natur.cuni.cz/etologiecloveka/images/download/T%C5%99ebick%C3%BD_et_al._2016_Focal_Length_Affects_Depicted_Shape_and_Perception_of_Facial_Images.pdf</link>
+        <date>February 19, 2016</date>
+        <publisher>PLOS ONE. 11: e0149313</publisher>
+        <a1>Vít Třebický</a1>
+        <a2>Jitka Fialová</a2>
+        <a3>Karel Kleisner</a3>
+        <a4>Jan Havlíček</a4>
+    </publication>
+ <!--   <publication>
         <title></title>
         <link></link>
         <date></date>
@@ -71,77 +75,5 @@
         <a28></a28>
         <a29></a29>
         <a30></a30>
-    </publication>
-    <publication>
-        <title></title>
-        <link></link>
-        <date></date>
-        <publisher></publisher>
-        <a1></a1>
-        <a2></a2>
-        <a3></a3>
-        <a4></a4>
-        <a5></a5>
-        <a6></a6>
-        <a7></a7>
-        <a8></a8>
-        <a9></a9>
-        <a10></a10>
-        <a11></a11>
-        <a12></a12>
-        <a13></a13>
-        <a14></a14>
-        <a15></a15>
-        <a16></a16>
-        <a17></a17>
-        <a18></a18>
-        <a19></a19>
-        <a20></a20>
-        <a21></a21>
-        <a22></a22>
-        <a23></a23>
-        <a24></a24>
-        <a25></a25>
-        <a26></a26>
-        <a27></a27>
-        <a28></a28>
-        <a29></a29>
-        <a30></a30>
-    </publication>
-    <publication>
-        <title></title>
-        <link></link>
-        <date></date>
-        <publisher></publisher>
-        <a1></a1>
-        <a2></a2>
-        <a3></a3>
-        <a4></a4>
-        <a5></a5>
-        <a6></a6>
-        <a7></a7>
-        <a8></a8>
-        <a9></a9>
-        <a10></a10>
-        <a11></a11>
-        <a12></a12>
-        <a13></a13>
-        <a14></a14>
-        <a15></a15>
-        <a16></a16>
-        <a17></a17>
-        <a18></a18>
-        <a19></a19>
-        <a20></a20>
-        <a21></a21>
-        <a22></a22>
-        <a23></a23>
-        <a24></a24>
-        <a25></a25>
-        <a26></a26>
-        <a27></a27>
-        <a28></a28>
-        <a29></a29>
-        <a30></a30>
-    </publication>
+    </publication>-->
 </dataroot>

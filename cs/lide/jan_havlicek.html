@@ -96,7 +96,7 @@
                             </ul>
                             <div class="tab-content">
                                 <div id="publications" class="tab active">
-                                    <div id="publications">
+                                    <div id="publication-container">
                                     </div>
                                 </div>
                                 <script>
@@ -117,7 +117,7 @@
                                   var x = xmlDoc.getElementsByTagName("publication");
                                   for (i = 0; i <x.length; i++) {
                                     if (check(x, i) == true) {
-                                        table += "<a href='" +
+                                        table += "<div class='publication shadow-6dp padd-2 col-margin'><a href='" +
                                         x[i].getElementsByTagName("link")[0].childNodes[0].nodeValue +
                                         "'>" +
                                         x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
@@ -133,7 +133,7 @@
                                         x[i].getElementsByTagName("a3")[0].childNodes[0].nodeValue +
                                         "</li><li>" + 
                                         x[i].getElementsByTagName("a4")[0].childNodes[0].nodeValue +
-                                        "</li>";
+                                        "</li></ul></div>";
                                     };
                                   };
                                   document.getElementById("publications").innerHTML = table;
