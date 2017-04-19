@@ -21,7 +21,7 @@
                                      <li><a href="../home.html">Domů</a></li>
                                      <li><a href="../aktuality.html">Aktuality</a></li>
                                      <li><a href="../o_nas.html">O nás</a></li>
-                                     <li>Výzkum</li>
+                                     <li><a href="../vyzkum.html">Výzkum</a></li>
                                      <ul>
                                         <li><a href="../vyzkum/probihajici_vyzkum.html">Probíhající výzkum</a></li>
                                         <li><a href="../vyzkum/granty.html">Granty</a></li>
@@ -30,7 +30,7 @@
                                         <li><a href="../vyzkum/ucastnici_vyzkumu.html">Účastníci výzkumu</a></li>
                                      </ul>
                                      <li><a href="../publikace.html">Publikace</a></li>
-                                     <li>Výuka</li>
+                                     <li><a href="../vyuka.html">Výuka</a></li>
                                      <ul>
                                         <li><a href="../vyuka/predmety.html">Předměty</a></li>
                                         <li><a href="../vyuka/zajemci_o_studium.html">Zájemci o studium</a></li>
@@ -50,7 +50,7 @@
                                 <a class="abutton" href="../aktuality.html">Aktuality</a>
                                 <a class="abutton" href="../o_nas.html">O nás</a>
                                 <div id="hd-dropdown">
-                                    <button id="drop-btn">Výzkum</button>
+                                    <a href="../vyzkum.html"><button id="drop-btn">Výzkum</button></a>
                                     <div class="shadow-4dp">
                                         <a href="../vyzkum/probihajici_vyzkum.html">Probíhající výzkum</a>
                                         <a href="../vyzkum/granty.html">Granty</a>
@@ -61,7 +61,7 @@
                                 </div>  
                                 <a class="abutton" href="../publikace.html">Publikace</a>
                                 <div id="hd-dropdown">
-                                    <button id="drop-btn">Výuka</button>
+                                    <a href="../vyuka.html"><button id="drop-btn">Výuka</button></a>
                                     <div class="shadow-4dp">
                                         <a href="../vyuka/predmety.html">Předměty</a>
                                         <a href="../vyuka/zajemci_o_studium.html">Zájemci o studium</a><a href="../vyuka/nabidka_temat.html">Nabídka témat</a>
@@ -93,8 +93,72 @@
                             </ul>
                             <div class="tab-content">
                                 <div id="publications" class="tab active">
-                                    <p></p>
+                                    <div id="publication-container">
+                                    </div>
                                 </div>
+                                <script>
+                                $(document).ready(function loadXMLDoc() {
+                                  var xmlhttp = new XMLHttpRequest();
+                                  xmlhttp.onreadystatechange = function() {
+                                    if (this.readyState == 4 && this.status == 200) {
+                                      myFunction(this);
+                                    };
+                                  };
+                                  xmlhttp.open("GET", "../../publications.xml", true);
+                                  xmlhttp.send();
+                                });
+                                function myFunction(xml) {
+                                  var i;
+                                  var xmlDoc = xml.responseXML;
+                                  var table="";
+                                  var x = xmlDoc.getElementsByTagName("publication");
+                                  for (i = 0; i <x.length; i++) {
+                                    if (checkAuthor(x, i) == true) {
+                                        table += "<div class='publication shadow-6dp padd-2 col-margin'><a href='" +
+                                        x[i].getElementsByTagName("link")[0].childNodes[0].nodeValue +
+                                        "'>" +
+                                        x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
+                                        "</a><p>" +
+                                        x[i].getElementsByTagName("date")[0].childNodes[0].nodeValue + 
+                                        " in " +
+                                        x[i].getElementsByTagName("publisher")[0].childNodes[0].nodeValue +
+                                        "</p><ul><li>" +
+                                        x[i].getElementsByTagName("a1")[0].childNodes[0].nodeValue +
+                                        "</li>";
+                                        if (checkUndefined(x[i].getElementsByTagName("a2")[0].childNodes[0])) {
+                                            table += "<li>" + x[i].getElementsByTagName("a2")[0].childNodes[0].nodeValue + "</li>";
+                                            if (checkUndefined(x[i].getElementsByTagName("a3")[0].childNodes[0])) {
+                                                table += "<li>" + x[i].getElementsByTagName("a3")[0].childNodes[0].nodeValue + "</li>";
+                                                if (checkUndefined(x[i].getElementsByTagName("a4")[0].childNodes[0])) {
+                                                    table += "<li>" + x[i].getElementsByTagName("a4")[0].childNodes[0].nodeValue + "</li>";
+                                                };
+                                            };
+                                        };
+                                        table += "</ul></div>";
+                                    };
+                                  };
+                                  document.getElementById("publications").innerHTML = table;
+                                };
+                                function checkUndefined (x) {
+                                    var bool = true;
+                                    if (x == 0) {
+                                        bool = false;
+                                    };
+                                    return bool;
+                                };
+                                function checkAuthor(x, a) {
+                                    var bool = false;
+                                    for (i = 3; i < x[a].childNodes.length; i = i + 1) {
+                                        if (x[a].querySelectorAll("publication *")[i + 1].childNodes[0]) {
+                                            if (x[a].querySelectorAll("publication *")[i + 1].childNodes[0].nodeValue == "Vít Třebícký") {
+                                                bool = true;
+                                                break;
+                                            };
+                                        };
+                                    };         
+                                    return bool;
+                                };
+                                </script>
                                 <div id="education" class="tab">
                                     <p>Aktuální seznam výuky na <a href="https://is.cuni.cz/studium/predmety/index.php?do=ucit&kod=40600" target="blank">IS UK</a></p>
                                 </div>

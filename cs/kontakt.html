@@ -21,7 +21,7 @@
                                      <li><a href="home.html">Domů</a></li>
                                      <li><a href="aktuality.html">Aktuality</a></li>
                                      <li><a href="o_nas.html">O nás</a></li>
-                                     <li>Výzkum</li>
+                                     <li><a href="vyzkum.html">Výzkum</a></li>
                                      <ul>
                                         <li><a href="vyzkum/probihajici_vyzkum.html">Probíhající výzkum</a></li>
                                         <li><a href="vyzkum/granty.html">Granty</a></li>
@@ -30,7 +30,7 @@
                                         <li><a href="vyzkum/ucastnici_vyzkumu.html">Účastníci výzkumu</a></li>
                                      </ul>
                                      <li><a href="publikace.html">Publikace</a></li>
-                                     <li>Výuka</li>
+                                     <li><a href="vyuka.html">Výuka</a></li>
                                      <ul>
                                         <li><a href="vyuka/predmety.html">Předměty</a></li>
                                         <li><a href="vyuka/zajemci_o_studium.html">Zájemci o studium</a></li>
@@ -50,7 +50,7 @@
                                 <a class="abutton" href="aktuality.html">Aktuality</a>
                                 <a class="abutton" href="o_nas.html">O nás</a>
                                 <div id="hd-dropdown">
-                                    <button id="drop-btn">Výzkum</button>
+                                    <a href="vyzkum.html"><button id="drop-btn">Výzkum</button></a>
                                     <div class="shadow-4dp">
                                         <a href="vyzkum/probihajici_vyzkum.html">Probíhající výzkum</a>
                                         <a href="vyzkum/granty.html">Granty</a>
@@ -61,7 +61,7 @@
                                 </div>  
                                 <a class="abutton" href="publikace.html">Publikace</a>
                                 <div id="hd-dropdown">
-                                    <button id="drop-btn">Výuka</button>
+                                    <a href="vyuka.html"><button id="drop-btn">Výuka</button></a>
                                     <div class="shadow-4dp">
                                         <a href="vyuka/predmety.html">Předměty</a>
                                         <a href="vyuka/zajemci_o_studium.html">Zájemci o studium</a>
@@ -115,7 +115,7 @@
                                     else{        
                                         $from="From: $name ($email)\r\nReturn-path: $email";
                                         $subject="Message sent using your contact form";
-                                        mail("screnshaw99@gmail.com", $subject, $message, $from);
+                                        mail("info@etologiecloveka.cz", $subject, $message, $from);
                                         echo "Email sent!";
                                         }
                                     }  
@@ -131,6 +131,7 @@
                                 <div class="flex-col-nwr flex-1">
                                     <p>José Martího 31</p>
                                     <p>162 52 Praha 6</p>
+                                    <p>jan.havlicek@natur.cuni.cz</p>
                                     <div id="map-fhs" class="map flex-1">
                                     </div>
                                 </div>
@@ -140,6 +141,7 @@
                                 <div class="flex-col-nwr flex-1">
                                     <p>Topolová 748</p>
                                     <p>250 67 Klecany</p>
+                                    <p>jan.havlicek@natur.cuni.cz</p>
                                     <div id="map-nudz" class="map flex-1">
                                     </div>
                                 </div>
@@ -149,6 +151,7 @@
                                 <div class="flex-col-nwr flex-1">
                                     <p>Viničná 7</p>
                                     <p>128 44 Praha 2</p>
+                                    <p>info@etologiecloveka.cz</p>
                                     <div id="map-prf" class="map flex-1">
                                     </div>
                                 </div>

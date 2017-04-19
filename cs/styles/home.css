@@ -154,7 +154,8 @@ main section#cubes a div p {
 }
 
 main section#articles div#article-container {
-    flex-basis: 68rem;
+    display: flex;
+    flex-basis: 50rem;
 }
 
 @media (max-width: 1023px) {
@@ -173,12 +174,12 @@ main section#articles div div {
 }
 
 main section#articles div div #article-iframe {
-    width: 70rem;
-    height: calc(70rem/16*9);
+    width: 45rem;
+    height: calc(45rem/16*9);
     border: none;
 }
 
 main section#articles div#fb-container {
-    max-height: 32rem;
-    flex-basis: 35rem;
+    display: flex;
+    flex-basis: 50rem;
 }
