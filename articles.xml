@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataroot>
-    <publication>
+    <article>
         <title></title>
         <link></link>
         <date></date>
@@ -35,5 +35,5 @@
         <a28></a28>
         <a29></a29>
         <a30></a30>
-    </publication>
+    </article>
 </dataroot>
